@@ -1,2 +1,2 @@
-# bootstraping-microservices
-bootstraping-microservices
+# bootstrapping-microservices
+bootstrapping-microservices
