@@ -2,7 +2,13 @@ const express = require('express');
 const fs = require('node:fs');
 
 const app = express();
-const port = 3000;
+
+if (!process.env.PORT) {
+  throw new Error(
+    'Please specify the port number for the HTTP server with the environment variable PORT.',
+  );
+}
+const PORT = process.env.PORT;
 
 app.get('/video', (_, res) => {
   const path = './videos/SampleVideo_1280x720_1mb.mp4';
@@ -24,6 +30,6 @@ app.get('/video', (_, res) => {
   // res.send('Hello, world!');
 });
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+app.listen(PORT, () => {
+  console.log(`Example app listening on port ${PORT}`);
 });
