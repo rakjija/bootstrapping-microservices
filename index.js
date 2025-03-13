@@ -4,7 +4,7 @@ const fs = require('node:fs');
 const app = express();
 const port = 3000;
 
-app.get('/video', (req, res) => {
+app.get('/video', (_, res) => {
   const path = './videos/SampleVideo_1280x720_1mb.mp4';
   fs.stat(path, (err, stats) => {
     if (err) {
