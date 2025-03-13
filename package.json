@@ -1,0 +1,26 @@
+{
+  "name": "bootstrapping-microservices",
+  "version": "1.0.0",
+  "description": "bootstrapping-microservices",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bonesoupmore/bootstrapping-microservices.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bonesoupmore/bootstrapping-microservices/issues"
+  },
+  "homepage": "https://github.com/bonesoupmore/bootstrapping-microservices#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4"
+  }
+}
