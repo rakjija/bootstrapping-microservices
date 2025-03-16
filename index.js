@@ -27,7 +27,6 @@ app.get('/video', (_, res) => {
 
     fs.createReadStream(path).pipe(res);
   });
-  // res.send('Hello, world!');
 });
 
 app.listen(PORT, () => {
